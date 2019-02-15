@@ -40,8 +40,8 @@
 					</ul>
 					
 						<ul class="nav navbar-nav ">
-							<li><a href="{{action('ProdutoController@lista')}}" class="navbar-brand" >Listagem</a></li>
-							<li><a href="{{action('ProdutoController@novo')}}" class="navbar-brand" >Novo</a></li>
+							<li><a href="" class="navbar-brand" >Consulta</a></li>
+						
 						</ul>
 				@endif
 				<ul class="nav navbar-nav navbar-right">
@@ -50,7 +50,7 @@
 						<li><a href="/auth/register">Register</a></li>
 					@else
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><strong>{{ Auth::user()->username }}</strong> <span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><strong>{{ Auth::user()->name }}</strong> <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="/auth/logout">Logout</a></li>
 							</ul>
