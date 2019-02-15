@@ -29,20 +29,7 @@ class ConsultaController extends Controller
         $titulo = preg_replace('/[ -]+/' , '+' , $data->consulta);
 
         
-/*
-        $endereco = "https://www.uplexis.com.br/blog/?s=$titulo";
 
-            $ch = curl_init( );
-            curl_setopt( $ch, CURLOPT_URL, $endereco );
-            curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1 );
-            curl_setopt( $ch, CURLOPT_CONNECTTIMEOUT, 0 );
-            $content = curl_exec( $ch );
-            curl_close( $ch );
-            //preg_match( "/<title>(.*)<\/title>/i", $content, $matches );
-            preg_match( "/col-md-6(.*)<\/div>/i", $content, $matches );
-            var_dump( $matches[ 1 ] );
-        
-       */
 
        $url = file_get_contents("https://www.uplexis.com.br/blog/?s=$titulo");
 
