@@ -9,8 +9,7 @@
                     </a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="{{action('ProdutoController@lista')}}" class="navbar-brand" >Listagem</a></li>
-                    <li><a href="{{action('ProdutoController@novo')}}" class="navbar-brand" >Novo</a></li>
+                   
                 </ul>
             </div>
         </nav>
@@ -19,7 +18,7 @@
     <div class="container">
          @yield('conteudo')
          <footer class="footer">
-            <p>© Livro de Laravel da Casa do Código.</p>
+            <p>©UpLexis.</p>
         </footer>
     </div>
     </body>

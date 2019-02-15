@@ -13,21 +13,11 @@
 /*
 Route::get('/', function () {
   
-    return 'Primeira Logagica';
+    return 'Primeira Logica';
 });*/
 
-Route::get('/produtos','ProdutoController@lista');
 
-Route::get('/produtos/mostra/{id}', 'ProdutoController@mostra')->where('id','[0-9]+');
-
-Route::get('/produtos/novo', 'ProdutoController@novo');
-Route::post('/produtos/adiciona','ProdutoController@adiciona');
-Route::get('/produtos/json','ProdutoController@listaJason');
-
-Route::get('/produtos/remove/{id}','ProdutoController@remove');
-Route::get('/produtos/edita/{id}','ProdutoController@edita');
-Route::post('/produtos/atualizar/{id}','ProdutoController@atualizar');
-
+Route::get('/consulta','ConsultaController@busca');
 
 # Authentication
 

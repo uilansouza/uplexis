@@ -40,7 +40,7 @@
 					</ul>
 					
 						<ul class="nav navbar-nav ">
-							<li><a href="" class="navbar-brand" >Consulta</a></li>
+							<li><a href="/consulta" class="navbar-brand" >Consulta</a></li>
 						
 						</ul>
 				@endif
@@ -67,7 +67,7 @@
          <footer class="footer">
             <p>© UpLexis.</p>
         </footer>
-    </div>>
+    </div>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </body>
