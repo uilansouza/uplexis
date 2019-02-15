@@ -4,7 +4,7 @@ namespace estoque\Http\Requests;
 
 use estoque\Http\Requests\Request;
 
-class ProdutosRequest extends Request
+class ConsultaRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,17 +24,8 @@ class ProdutosRequest extends Request
     public function rules()
     {
         return [
-            'nome'=>'required|max:100',
-            'descricao'=>'required|max:255',
-            'valor'=>'required|numeric',
-            'quantidade'=>'min:0'
-
-            //
-        ];
-    }
-    public function messages(){
-        return[
-            'required'=>'O campo :attribute Não pode ser branco'
+         'consulta'=>'required|max:100'
+        
         ];
     }
 }

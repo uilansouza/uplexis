@@ -11,13 +11,18 @@
 |
 */
 /*
+
 Route::get('/', function () {
   
     return 'Primeira Logica';
 });*/
 
 
-Route::get('/consulta','ConsultaController@busca');
+Route::get('/consulta','ConsultaController@consulta');
+Route::get('/pesquisar','ConsultaController@pesquisaResultado');
+
+
+
 
 # Authentication
 
