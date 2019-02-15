@@ -31,8 +31,9 @@ Route::post('/produtos/atualizar/{id}','ProdutoController@atualizar');
 
 # Authentication
 
-Route::get('/login','LoginController@login');
+//Route::get('/login','LoginController@login');
 Route::get('/', 'HomeController@index');
+
 //', 'HomeController@index');
 
 Route::controllers([

@@ -32,8 +32,5 @@ class PasswordController extends Controller
         $this->middleware('guest');
     }
 
-    function username(){
-        
-        return 'username';
-    }
+   
 }

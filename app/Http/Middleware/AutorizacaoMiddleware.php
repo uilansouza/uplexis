@@ -13,13 +13,15 @@ class AutorizacaoMiddleware
      * @param  \Closure  $next
      * @return mixed
      */
+    /*
     public function handle($request, Closure $next)
     {
-        
+    
         //verifica que a request acessada não é a de auth/login( evita looping em excesso)
         if(!$request->is('auth/login') && \Auth::guest()){ 
            return redirect ('/auth/login');
         }
         return $next($request);
     }
+    */
 }

@@ -11,8 +11,8 @@ class LoginController extends Controller
 {
     //
     
-    protected $username;
-
+  
+/*
     public function authenticate(Request $request){
         dd($request);
         
@@ -25,4 +25,5 @@ class LoginController extends Controller
         return "As credenciais nao são validas";
 
     }
+    */
 }
